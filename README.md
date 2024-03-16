@@ -1,5 +1,9 @@
 # Assignment 6: Wordle
 
+## URL:
+
+https://megler.github.io/wordle/
+
 ## API's Used:
 
 - Word Picker: https://random-word-api.herokuapp.com/home
@@ -9,6 +13,8 @@
 I was originally going to use RapidAPI but their payment portal was down and I had limited time to get the API implemented. After more searching, I found https://devpost.com/software/random-wordle-diqv1t which listed the 3 API's. No, I did not look at their final product or their GitHub repo. I only cared about workable API's.
 
 The only drawback to the Word Picker is there are some really obscure words as well as words not recognized by the dictionary. This required more handling to generate a word, confirm it was in the dictionary, then allow the game to begin. They're all free, so can't really complain.
+
+One note: If you put jibberish in as a guess, the dictionaryapi throws a 404. I checked the API itself and that's just how it behaves. Back to that free thing, but I am aware of it.
 
 The confetti API is pretty cool. I enjoyed playing with it.
 
