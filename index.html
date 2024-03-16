@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="title" class="merriweather-bold">Wordle</div>
+        <div class="action-container">
+            <div class="showWordCheckbox">
+                <div id="showWord">Show Word</div>
+                <input class="tgl tgl-ios" id="cb2-7" type="checkbox" />
+                <label class="tgl-btn" for="cb2-7"></label>
+            </div>
+            <div class="reset-button"><button>Play Again</button></div>
+        </div>
+
+        <div id="gameboard"></div>
+        <div id="keyboard"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://kit.fontawesome.com/347d408513.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
