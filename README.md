@@ -23,3 +23,5 @@ The confetti API is pretty cool. I enjoyed playing with it.
 What was the most satisfying part of this assignment?
 
 After having spent the past 2 weeks at work creating a complete frontend application (Angular) for large scale budgeting, I have to say Wordle was HARD. So many edge cases. Especially without having a framework to abstract out the hard stuff. It was very satisfying doing this the hard way and seeing it come together. Plus confetti is cool. ;-)
+
+The other satisfying part was using portions of JS I never use in a framework. Promises (I use RXJS in real life) are the big one, but there were also interesting JS methods like `Array.isArray(result)` and `hasOwnProperty` which I haven't come across the need to use yet at work. They were super cool to use here.

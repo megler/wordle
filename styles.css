@@ -116,7 +116,6 @@
   align-items: center;
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
 }
 
 /* Toggle Credit: https://getcssscan.com/css-checkboxes-examples : Mauricio Allende */
@@ -225,4 +224,34 @@
 .yellow {
   background-color: #c9b458;
   color: white;
+}
+
+.win-streak {
+  background-color: #f7d359;
+  color: #505050;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.win-streak:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.win-streak-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.win-streak-label {
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #5757a9;
 }

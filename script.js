@@ -3,6 +3,8 @@ class Wordle {
   gameWord = "";
   isGameOver = false;
   guessCount = 0;
+  streak = 0;
+  hasWon = false;
 
   constructor() {
     this.wordleService = new WordleService();
@@ -46,6 +48,12 @@ class Wordle {
     this.uiService.updateResetButtonText("Play Again");
     this.uiService.resetShowWordCheckbox();
     this.uiService.setShowWordDiv("Show Word");
+
+    if (!this.hasWon) {
+      this.streak = 0;
+      document.querySelector(".win-streak").innerHTML = this.streak;
+    }
+    this.hasWon = false;
 
     this.wordleService
       .fetchDailyWord()
@@ -172,12 +180,18 @@ class Wordle {
     if (result.correct === this.gameWord.length) {
       setTimeout(() => {
         this.uiService.fireConfetti();
+        this.streak++;
+        this.hasWon = true;
+        document.querySelector(".win-streak").innerHTML = this.streak;
         alert("You win!");
         this.isGameOver = true;
       }, 30);
     } else if (this.guessCount >= 6) {
       setTimeout(() => {
         alert("Game over. The word was " + this.gameWord);
+        this.streak = 0;
+        this.hasWon = false;
+        document.querySelector(".win-streak").innerHTML = this.streak;
         this.isGameOver = true;
       }, 10);
     } else {
