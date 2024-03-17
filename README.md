@@ -4,6 +4,10 @@
 
 https://megler.github.io/wordle/
 
+## Repo
+
+https://github.com/megler/wordle
+
 ## API's Used:
 
 - Word Picker: https://random-word-api.herokuapp.com/home
