@@ -193,11 +193,11 @@ class Wordle {
         this.hasWon = false;
         document.querySelector(".win-streak").innerHTML = this.streak;
         this.isGameOver = true;
-      }, 10);
+      }, 30);
     } else {
       setTimeout(() => {
         alert("Try again!");
-      }, 10);
+      }, 30);
     }
   }
 
