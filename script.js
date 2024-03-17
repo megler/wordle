@@ -185,7 +185,7 @@ class Wordle {
         document.querySelector(".win-streak").innerHTML = this.streak;
         alert("You win!");
         this.isGameOver = true;
-      }, 30);
+      }, 20);
     } else if (this.guessCount >= 6) {
       setTimeout(() => {
         alert("Game over. The word was " + this.gameWord);
@@ -193,11 +193,11 @@ class Wordle {
         this.hasWon = false;
         document.querySelector(".win-streak").innerHTML = this.streak;
         this.isGameOver = true;
-      }, 30);
+      }, 20);
     } else {
       setTimeout(() => {
         alert("Try again!");
-      }, 30);
+      }, 20);
     }
   }
 
